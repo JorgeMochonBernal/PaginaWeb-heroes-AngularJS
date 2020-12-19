@@ -6,6 +6,10 @@ import { ROUTES_HEROES } from './rutas /heroes.routes';
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 
+//Servicios
+import {  HeroesServices } from './servicios/heroes.services';
+
+//Compponentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './componentes /about/about.component';
@@ -34,7 +38,7 @@ import { NavbarComponent } from './componentes /shared/navbar/navbar.component';
     RouterModule.forRoot(ROUTES_HEROES, { useHash:true })
   ],
   providers: [
- 
+   HeroesServices
   ],
   bootstrap: [AppComponent]
 })
