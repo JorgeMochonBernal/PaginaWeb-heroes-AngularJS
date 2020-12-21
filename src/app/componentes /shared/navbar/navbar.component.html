@@ -23,11 +23,11 @@
     </ul>
 
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar héroe">
-      <button 
+    <div class="form-inline my-2 my-lg-0">
+     <input class="form-control mr-sm-2" type="text" placeholder="Buscar héroe" (keyup.enter)="buscarHeroe(heroe.value)" #heroe>
+      <button (click)="buscarHeroe(heroe.value)"
           class="btn btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
-    </form>
+    </div>
 
 
   </div>

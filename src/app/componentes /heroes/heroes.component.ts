@@ -11,7 +11,7 @@ import { HeroesServices } from './../../servicios/heroes.services';
 		heroes:any[] = [];
 
 		constructor( private _heroesServices:HeroesServices ) { 
-			this.heroes = this._heroesServices.getHeroe();
+			this.heroes = this._heroesServices.getHeroes();
 		}
 
 		ngOnInit(): void {
